@@ -1,8 +1,30 @@
-
-out/test/**
+# Source files
 src/**
+out/test/**
+tsconfig.json
+
+# Development files
 .vscode/**
 .vscode-test/**
+.gitignore
+PUBLISHING.md
+
+# Documentation (keep README.md, exclude others)
+*.md
+!README.md
+
+# Test files
 node_modules/**/test/**
 node_modules/**/docs/**
+node_modules/**/*.md
+node_modules/**/README*
+node_modules/**/CHANGELOG*
+node_modules/**/LICENSE*
+
+# Build artifacts
 **/*.map
+**/*.tsbuildinfo
+
+# Misc
+.DS_Store
+*.log

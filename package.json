@@ -2,14 +2,34 @@
   "name": "vscode-live-sports-scores",
   "displayName": "Live Sports Scores",
   "description": "See live sports scores (football, cricket, and more) in your status bar and a tabbed dashboard. Powered by football-data.org and cricketdata.org.",
-  "version": "0.1.0",
-  "publisher": "your-name",
+  "version": "0.1.3",
+  "publisher": "Akshayan-Mohandas",
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "sports",
+    "football",
+    "cricket",
+    "live scores",
+    "soccer",
+    "sports scores",
+    "football-data",
+    "cricketdata"
+  ],
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AkshayanMohandas/vscode-live-scores.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AkshayanMohandas/vscode-live-scores/issues"
+  },
+  "homepage": "https://github.com/AkshayanMohandas/vscode-live-scores#readme",
   "activationEvents": [
     "onStartupFinished",
     "onCommand:footballLiveScores.openDashboard",
