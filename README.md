@@ -62,11 +62,26 @@ You're in the zone coding, but you don't want to miss that crucial goal, wicket,
 
 ## 🚀 Quick Start Guide
 
+### ⚠️ API Keys Required
+
+**Important**: The extension can be installed and will run without API keys, but **you need at least one API key to see actual scores**.
+
+- **Without API keys**: Extension works but shows empty states and warnings
+- **With Football API key only**: You'll see football scores
+- **With Cricket API key only**: You'll see cricket scores  
+- **With both API keys**: You'll see both football and cricket scores
+
+**You need at least one API key to get started!** Both APIs offer free tiers, so getting started is quick and easy.
+
+---
+
 ### Step 1: Install the Extension
 
 1. Open VS Code Extensions (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 2. Search for **"Live Sports Scores"**
 3. Click **Install**
+
+**Note**: After installation, the extension will work but won't show scores until you configure at least one API key (see steps below).
 
 ### Step 2: Set Up Football Scores
 
@@ -83,6 +98,8 @@ You're in the zone coding, but you don't want to miss that crucial goal, wicket,
 
 ### Step 3: Set Up Cricket Scores (Optional)
 
+**Note**: Cricket setup is optional. If you only want football scores, you can skip this step.
+
 1. **Get Your API Key**
    - Visit [cricketdata.org](https://cricketdata.org/)
    - Sign up for a free account
@@ -93,6 +110,8 @@ You're in the zone coding, but you don't want to miss that crucial goal, wicket,
    - Ensure `footballLiveScores.enableCricket` is enabled (default: `true`)
 
 ### Step 4: Start Using
+
+**After configuring at least one API key**, you can start using the extension:
 
 1. **Open the Dashboard**
    - Click the status bar item, OR
@@ -173,6 +192,53 @@ Access via Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`):
 
 - **Sports: Open Live Scores Dashboard** - Opens the main dashboard with Football and Cricket tabs
 - **Sports: Refresh Live Scores** - Manually refresh all scores
+
+---
+
+## ❓ Frequently Asked Questions
+
+### Do I need API keys to use this extension?
+
+**Short answer**: The extension will install and run without API keys, but **you need at least one API key to see actual scores**.
+
+**Detailed answer**:
+- ✅ **Extension installation**: Works without API keys
+- ✅ **Extension functionality**: Extension runs without crashing
+- ❌ **Showing scores**: Requires at least one API key (football OR cricket)
+- ⚠️ **Without API keys**: You'll see empty states and warnings like "Set footballLiveScores.apiKey" or "No live matches"
+
+**To see scores, you need**:
+- Football API key → See football scores
+- Cricket API key → See cricket scores
+- Both API keys → See both sports
+
+Both APIs offer **free tiers**, so getting started is quick and easy!
+
+### Can I use the extension with only one API key?
+
+Yes! You can use the extension with just a football API key or just a cricket API key. The extension will show scores for whichever sport(s) you have configured. If you only have a football API key, the cricket tab will show an empty state, and vice versa.
+
+### What happens if I don't configure any API keys?
+
+The extension will:
+- ✅ Install successfully
+- ✅ Show the status bar item
+- ✅ Open the dashboard when clicked
+- ⚠️ Display warnings in the status bar ("Set footballLiveScores.apiKey")
+- ⚠️ Show empty states in the dashboard tabs
+- ❌ Not fetch or display any scores
+
+### Are the API keys free?
+
+Yes! Both APIs offer free tiers:
+- **football-data.org**: Free tier available (registration required)
+- **cricketdata.org**: Free tier available (registration required)
+
+Check their respective websites for current free tier limits and features.
+
+### Do I need to add API keys to the project code?
+
+**No!** You configure API keys through VS Code Settings, not in the project code. The extension reads API keys from VS Code's configuration system, which stores them securely in your user settings. You never need to modify the extension's source code.
 
 ---
 
